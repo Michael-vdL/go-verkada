@@ -80,3 +80,11 @@ type CameraResponse struct {
 	Site string `json:"site"`
 	Status string `json:"status"`
 }
+
+// Get Thumbnail
+
+type CameraThumbnailResponse struct {
+	Expiry int `json:"expiry"`
+	Timestamp int `json:"timestamp"`
+	Url string `json:"url"`
+}
