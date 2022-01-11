@@ -44,3 +44,39 @@ type DeviceResponse struct {
 	DeviceSiteName string `json:"device_site_name"`
 	DeviceType     string `json:"device_time"`
 }
+
+/**
+ Notifications
+*/
+
+// TODO: Populate when I can view sample data
+type NotificationsResponse map[string]interface{}
+
+/**
+	Cameras
+*/
+
+// Get All Camers
+type CamerasResponse struct {
+	Cameras []CameraResponse `json:"cameras"`
+}
+
+type CameraResponse struct {
+	CameraId string `json:"camera_id"`
+	CloudRetention int `json:"cloud_retention"`
+	DateAdded int `json:"data_added"`
+	DeviceRetention int `json:"device_retention"`
+	Firmware string `json:"firmware"`
+	LastOnline int `json:"last_online"`
+	LocalIp string `json:"local_ip"`
+	Location string `json:"location"`
+	LocationAngle float32 `json:"location_angle"`
+	LocationLat float32 `json:"location_lat"`
+	LocationLon float32 `json:"location_lon"`
+	MacAddress string `json:"mac"`
+	Model	string	`json:"model"`
+	Name	string `json:"name"`
+	Serial string `json:"serial"`
+	Site string `json:"site"`
+	Status string `json:"status"`
+}
