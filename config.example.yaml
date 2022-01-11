@@ -1,0 +1,6 @@
+verkada:
+  organization_id: '<Verkada Organization ID>'
+  api_key: '<Verkada API Key>'
+elastic:
+  host: '<Elastic Hostname>'
+  port: '<Elastic Port>'
